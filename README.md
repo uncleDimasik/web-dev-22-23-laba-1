@@ -3,10 +3,10 @@
 __node -v 18.7.0__
 ## Install deps
 ### `yarn`
-```
-CLI $ yarn
+```sh
+$ yarn
 ```
 ## Run project
-```
-CLI $ gulp
+```sh
+$ gulp
 ```
