@@ -3,5 +3,67 @@
 @import 'reset';
 @import 'libs';
 @import 'global';
+@import "mixins";
+
+.header {
+  background-color: $header-color;
+
+  &__inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+  }
+}
+
+.menu {
+  &__list {
+    display: flex;
+    gap: 40px;
+  }
+
+  &__link {
+    font-weight: bold;
+    color: $font-color;
+  }
+}
+
+.main {
+}
+
+.section {
+  padding: 20px 0 20px;
+}
+
+.cards-column {
+  margin-top: 15px;
+  display: flex;
+  gap: 20px;
+
+  &__title {
+    padding: 10px 0 0;
+  }
+}
+
+.cards-row {
+  margin-top: 15px;
+
+  &__item:first-child {
+    margin: 0;
+  }
+
+  &__item {
+    display: flex;
+    margin: 25px 0 0 0;
+  }
+
+  &__body{
+    padding-left: 15px;
+  }
+}
 
 
+.footer {
+  background-color: $footer-color;
+  height: 120px;
+}
