@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap" rel="stylesheet">
+    <title>Main</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+
+<body>
+
+<div class="wrapper">
+    <header class="header">
+        <div class="container">
+            <div class="header__inner">
+                <nav class="menu">
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="index.html" class="menu__link">Main</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="history.html" class="menu__link">History</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="infrastructure.html" class="menu__link">Infrastructure</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="arts.html" class="menu__link">Arts</a>
+                        </li>
+                        <li class="menu__item">
+                            <a href="contact.html" class="menu__link">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="container">
+            <div class="main__inner">
+
+                <section class="section">
+                    <div class="section__content">
+                        <form>
+                            <fieldset>
+                                <legend>Форма</legend>
+                                <label> Ваше имя: <input type="text" placeholder="Имя" required></label> <br>
+                                <label> Ваш email: <input type="email" placeholder="Email" required></label><br>
+                                <label>Текст сообщения:</label><br>
+                                <label><textarea placeholder="Введите ваше сообщение"></textarea></label><br>
+                                <label><input type="file" value="Выберите файл"></label><br>
+                                <label>Укажите дату - <input type="date"></label><br>
+                                <label>Кому отправить -
+                                    <select>
+                                        <option>Директору</option>
+                                        <option>В отдел продаж</option>
+                                    </select>
+                                </label><br>
+                                <label>Отправить копию письма себе на почту?
+                                    <input type="radio" name="primer">Да
+                                    <input type="radio" name="primer">Нет
+                                </label><br>
+                                <label>Каким образом направить вам ответ <br>
+                                    <input type="checkbox" name="a" value="1" checked>По электронной почте <br>
+                                    <input type="checkbox" name="a" value="2">По почте на бумажном носителе<br>
+                                    <input type="checkbox" name="a" value="3">Перезвонить по телефону<br>
+                                </label>
+                            </fieldset>
+                            <label>
+                                <input formnovalidate type="submit">
+                                <input type="reset">
+                            </label><br>
+                        </form>
+                    </div>
+                </section>
+            </div>
+        </div>
+    </main>
+    <article class="article">
+        <div class="container">
+            <section class="section">
+                <aside>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci architecto
+                    consequatur dignissimos dolor earum exercitationem explicabo illum ipsam iure maxime mollitia,
+                    necessitatibus, nobis praesentium quis saepe tenetur vel voluptatum.
+                </aside>
+                <article>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium adipisci architecto
+                    consequatur dignissimos dolor earum exercitationem explicabo illum ipsam iure maxime mollitia,
+                    necessitatibus, nobis praesentium quis saepe tenetur vel voluptatum.
+                </article>
+            </section>
+        </div>
+    </article>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__inner">
+            </div>
+        </div>
+    </footer>
+</div>
+
+
+<script src="js/main.min.js"></script>
+</body>
+
+</html>
