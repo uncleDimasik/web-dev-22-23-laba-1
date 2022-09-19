@@ -1,0 +1,4 @@
+@import "vars";
+@mixin border-solid($border-width) {
+  border: $border-width solid $footer-color;
+}
