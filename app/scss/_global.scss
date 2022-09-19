@@ -1,5 +1,6 @@
 @import 'vars';
 
+
 html,
 body {
   height: 100%;
@@ -37,6 +38,22 @@ input {
   padding: 5px;
   border: 3px solid $footer-color;
   border-radius: 10px;
+
+  &:required {
+    background-color: gold;
+  }
+
+  &:optional {
+    background-color: #00ffe1;
+  }
+
+  &:focus {
+    outline-style: none;
+    box-shadow: none;
+    border: 5px solid $footer-color;
+    color: white;
+    background-color: #e3e9ff;
+  }
 }
 
 textarea {
@@ -44,6 +61,22 @@ textarea {
   padding: 10px;
   border: 3px solid $footer-color;
   border-radius: 10px;
+
+  &:required {
+    background-color: gold;
+  }
+
+  &:optional {
+    background-color: #00ffe1;
+  }
+
+  &:focus {
+    outline-style: none;
+    box-shadow: none;
+    border: 5px solid $footer-color;
+    color: white;
+    background-color: #e3e9ff;
+  }
 }
 
 fieldset {
@@ -58,6 +91,30 @@ aside {
   width: 40%;
 }
 
+
+ul > {
+  li {
+    list-style-type: none;
+  }
+}
+
+nav {
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+
+  li {
+    display: inline-block;
+  }
+
+  a {
+    display: block;
+    padding: 6px 12px;
+    text-decoration: none;
+  }
+}
 
 .wrapper {
   display: flex;

@@ -24,11 +24,33 @@
 
   &__link {
     font-weight: bold;
-    color: $font-color;
   }
 }
 
-.main {
+#main {
+  border: 7px ridge #eceffd;
+}
+
+a[href$=".html"] {
+  color: $font-color;
+
+  &:hover {
+    text-decoration: underline;
+    text-decoration-color: $font-color;
+    background-color: #94a6e0;
+  }
+
+  &:active {
+    box-shadow: 2px 2px 5px #8393c7
+  }
+}
+
+a:visited {
+  color: #34c100;
+
+}
+a:link {
+  color: $font-color;
 }
 
 .section {
@@ -75,7 +97,40 @@
   }
 }
 
+.inf-district,
+.inf-neighborhood,
+.inf-bus,
+.inf-railway,
+.inf-tram {
+  li {
+    position: relative;
+    padding: 0 0 0 30px;
+  }
+
+
+  li:before {
+    content: '';
+    background: #7fbfff 0 0 no-repeat;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 4px;
+    left: 0;
+  }
+
+  li:nth-of-type(even){
+    background: #b9bcc7 0 0 no-repeat;
+  }
+
+  li:hover {
+    font-size: 18px;
+  }
+}
+
+
 .footer {
   background-color: $footer-color;
   height: 120px;
 }
+
