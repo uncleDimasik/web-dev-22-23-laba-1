@@ -49,6 +49,7 @@ a:visited {
   color: #34c100;
 
 }
+
 a:link {
   color: $font-color;
 }
@@ -119,7 +120,7 @@ a:link {
     left: 0;
   }
 
-  li:nth-of-type(even){
+  li:nth-of-type(even) {
     background: #b9bcc7 0 0 no-repeat;
   }
 
@@ -131,6 +132,94 @@ a:link {
 
 .footer {
   background-color: $footer-color;
-  height: 120px;
+  height: 170px;
 }
 
+.south-park-wrapper {
+
+}
+
+.south-park {
+  margin: 0 auto;
+  width: 590px;
+  height: 146px;
+  background-color: #72cae1;
+
+  &__background {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    clip-path: polygon(0 0, 100% 0%, 100% 100%, 0 100%);
+    overflow: hidden;
+  }
+
+  &__mountain-1 {
+    position: absolute;
+    top: -30px;
+    left: -250px;
+    width: 700px;
+    height: 220px;
+    background: #336850;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  &__mountain-snow-big{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform-origin: center;
+    top: 12%;
+    left: 45%;
+    transform: translate(-50%,-50%);
+    width: 120px;
+    height: 100px;
+  }
+
+  &__mountain-snow-small{
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform-origin: center;
+    top: 0%;
+    left: 55%;
+    transform: translate(-50%,-50%);
+    width: 100px;
+    height: 120px;
+  }
+
+  &__mountain-2 {
+    position: absolute;
+    top: -30px;
+    left: -50px;
+    width: 800px;
+    height: 220px;
+    background: #336850;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  &__mountain-3 {
+    position: absolute;
+    top: -20px;
+    left: 310px;
+    width: 700px;
+    height: 220px;
+    background: #336850;
+    -webkit-clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+  }
+
+  &__ground {
+    position: absolute;
+    background-color: white;
+    border-radius: 50%;
+    transform-origin: center;
+    top: 110%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 1000px;
+    height: 100px;
+  }
+
+}
