@@ -132,7 +132,7 @@ a:link {
 
 .footer {
   background-color: $footer-color;
-  height: 400px;
+  height: 150px;
 }
 
 
@@ -604,16 +604,18 @@ a:link {
         width: 17px;
         border: 1px solid black;
         border-radius: 3px;
-        &:after{
+
+        &:after {
           content: '';
           clip-path: polygon(0 0, 50% 100%, 100% 0);
           position: absolute;
           left: -1px;
           height: 12px;
           width: 17px;
-          background:  #e75205;
+          background: #e75205;
         }
-        &:before{
+
+        &:before {
           content: '';
           clip-path: polygon(0 0, 50% 100%, 100% 0);
           position: absolute;
@@ -634,16 +636,18 @@ a:link {
         border: 1px solid black;
         border-radius: 3px;
         background: #e75205;
-        &:after{
+
+        &:after {
           content: '';
           clip-path: polygon(0 0, 50% 100%, 100% 0);
           position: absolute;
           left: -1px;
           height: 12px;
           width: 17px;
-          background:  #e75205;
+          background: #e75205;
         }
-        &:before{
+
+        &:before {
           content: '';
           clip-path: polygon(0 0, 50% 100%, 100% 0);
           position: absolute;
@@ -734,6 +738,7 @@ a:link {
       }
     }
   }
+
   #stan {
     position: relative;
     display: inline-block;
@@ -977,6 +982,7 @@ a:link {
       }
     }
   }
+
   #kenny {
     position: relative;
     display: inline-block;
