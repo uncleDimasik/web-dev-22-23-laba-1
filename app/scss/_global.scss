@@ -50,6 +50,10 @@ input {
     color: white;
     background-color: #e3e9ff;
   }
+  &:checked{
+    border: none;
+    outline: 2px solid deeppink;
+  }
 }
 
 textarea {
